@@ -27,6 +27,7 @@
         width: 100%;
         height: 100%;
         /* your background image should have dimensions of 1875x1275 pixels. */
+        /* http://fr.october.eu/wp-content/uploads/sites/11/2019/04/lob_postcard_hotel.png */
         background-image: url('{{background-img}}');
         background-size: 6.25in 4.25in;
         background-repeat: no-repeat;
@@ -40,6 +41,7 @@
         left: 0;
         width: 100%;
         height: 100%;
+        /* http://fr.october.eu/wp-content/uploads/sites/11/2019/04/lob_recto_bg-1.png*/
         background-image: url('{{layout-img}}');
         background-size: 6.25in 4.25in;
         background-repeat: no-repeat;
@@ -89,18 +91,18 @@
       }
       
       li#r1 {
-        max-width: 43mm;
+        max-width: 39mm;
         padding-left: 10mm;
       }
       
       li#r2 {
-        max-width: 32mm;
-        padding-left: 8mm;
+        max-width: 40mm;
+        padding-left: 10mm;
       }
       
       li#r3 {
-        max-width: 35mm;
-        padding-left: 8mm;
+        max-width: 39mm;
+        padding-left: 10mm;
       }
       
       .phone,
@@ -124,16 +126,20 @@
 
       <!-- do not put text outside of the safe area -->
       <div id="safe-area">
-
+        <!-- votre hôtel -->
         <h1 id="heading"><span>Un financement</span> <span><strong>simple et rapide</strong> pour</span> <span>{{your-business}}.</span> </h1>
 
         <ul id="reasons">
+          <!-- Acquisition d'un <br> nouvel établissement -->
           <li id="r1">{{reason-1}}</li>
+          <!-- Rénovation de votre hôtel≈ -->
           <li id="r2">{{reason-2}}</li>
+          <!-- Recrutements ou communication -->  
           <li id="r3">{{reason-3}}</li>
         </ul>
-
+        <!-- 01 83 81 07 91 -->
         <p id="phone" class="contact">{{phone}}</p>
+        <!-- october.eu/hotels -->
         <p id="web" class="contact">{{url}}</p>
 
       </div>
