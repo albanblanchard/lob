@@ -1,0 +1,65 @@
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>october fast & simple postcard - verso</title>
+    <style>
+      *,
+      *:before,
+      *:after {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+      
+      body {
+        width: 6.25in;
+        height: 4.25in;
+        margin: 0;
+        padding: 0;
+      }
+      
+      #container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+      
+      #layout {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('{{layout-img}}');
+        background-size: 6.25in 4.25in;
+        background-repeat: no-repeat;
+      }
+      /* do not put text outside of the safe area */
+      
+      #safe-area {
+        position: absolute;
+        width: 5.875in;
+        height: 3.875in;
+        left: 0.1875in;
+        top: 0.1875in;
+      }
+      
+    </style>
+  </head>
+
+  <body>
+    <div id="container">
+      <div id="layout"></div>
+
+      <!-- do not put text outside of the safe area -->
+      <div id="safe-area">
+
+
+      </div>
+    </div>
+
+  </body>
+
+</html>
